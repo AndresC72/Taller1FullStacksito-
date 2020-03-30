@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="EJ()">Ejecutar</button><br>
+
+    <script>
+
+function EJ() {
+            cont = 0;
+            var nombres = [""];
+
+            while (elementos != "") {
+
+                var elementos = prompt("Ingrese un nombre para guardar");
+                var buscar = 0;
+                for (i = 0; i < nombres.length; i++) {
+                    if (nombres[i] == elementos) {
+                        buscar = 1;
+                    }
+                }
+
+                if (buscar == 1) {
+                    nombres = nombres;
+                    nombres.sort();
+                } else {
+                    nombres[cont] = elementos;
+                    nombres.sort();
+                    cont++;
+                }
+            }
+            nombres.shift();
+            alert(nombres);
+        }
+    </script>
+    
+</body>
+</html>

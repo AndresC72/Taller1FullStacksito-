@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+    window.alert("Ejercicio 1");
+
+    // pido los datos por consola 
+    var nota = window.prompt("Digite la nota del parcial 1");
+    var nota1 = window.prompt("Digite la nota del parcial 2");
+    var nota2 = window.prompt("Digite la nota del parcial 3");
+    var nota3 = window.prompt("Digite la nota del examen final");
+    var nota4 = window.prompt("Digite la nota del trabajo final");
+        
+    //asignamos los porcentajes y promedios a las variables
+        var promedio = parseFloat(nota+nota1+nota2*0.55);
+        var examen = parseFloat(nota3*0.30);
+        var trabajo = parseFloat(nota4*0.15);
+
+        //sumamos el promedio total lo dividimos entre 3 para darle el resultado al usuario
+        var total = parseFloat(promedio+examen+trabajo/3);
+        document.write("Su nota final es de "+(total));
+   
+   
+    </script>
+    
+</body>
+</html>

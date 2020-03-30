@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var palabra = prompt("Digite la palabra o frase a evaluar");
+            var inversion = "";
+            for (i =palabra.length - 1; i >= 0; i--) {
+                inversion += palabra[i];
+            }
+            document.write(`La palabra normal es: <br> ${palabra} <br>`);
+            document.write(`La palabra invertida es: <br> ${inversion}`);
+            var espaciosPalabra = 0;
+            for (i = 0; i < inversion.length;i++) {
+                if (inversion[i] == " ") {
+                    espaciosPalabra++;
+                }
+            }
+            console.log(`<br> tiene ${espaciosPalabra + 1} palabras`);
+            console.log(`<br> tiene ${espaciosPalabra} espacios`);
+    </script>
+</body>
+</html>
